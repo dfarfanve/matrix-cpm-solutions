@@ -1,0 +1,16 @@
+target/
+*.class
+*.war
+*.jar
+*.log
+nbproject/private/
+nbproject/Makefile-*.mk
+nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+.idea/
+*.iml
+.DS_Store

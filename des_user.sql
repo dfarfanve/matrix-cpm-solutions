@@ -1,0 +1,19 @@
+DROP TABLE IF EXISTS DES_SECURITY.DES_USER;
+CREATE TABLE  DES_SECURITY.DES_USER (
+  user_id INT(20) NOT NULL AUTO_INCREMENT,
+  user_name VARCHAR(60) NOT NULL,
+  user_pass VARCHAR(60) NOT NULL,
+  is_active VARCHAR(1) DEFAULT 'Y',
+  client_id INT(11) NOT NULL,
+  client_name VARCHAR(60) NOT NULL,
+  chain_name VARCHAR(60) DEFAULT NULL,
+  created_by INT(11) DEFAULT '0', 
+  updated_by INT(11) DEFAULT '0',
+  created DATETIME DEFAULT NULL,
+  updated DATETIME DEFAULT NULL,
+  last_login DATETIME DEFAULT NULL,
+  pwd_expiration DATETIME DEFAULT NULL,
+  date_of_birth DATETIME DEFAULT NULL,
+  pwd_lastset DATETIME DEFAULT NULL,
+  PRIMARY KEY (user_id)
+) 
